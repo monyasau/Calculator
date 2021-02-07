@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link rel="icon " href="./assets/icon.ico">
+    <title>Calculator</title>
+    <style>
+      body {
+        background-color: rgb(243, 243, 243);
+      }
+      .calc {
+        background-color: lightgrey;
+        width: 3in;
+        height: 4in;
+        border: solid 3px darkslategrey;
+        border-radius: 10px;
+        margin-top: 20px;
+        /*Align to middle*/
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #output {
+        border-radius: 10px;
+        background-color: white;
+        color: saddlebrown;
+        width: 280px;
+        height: 90px;
+        margin-top: 5px;
+        margin-left: 3px;
+      }
+      .header {
+        background-color: lightslategray;
+      }
+      .btn-container {
+        background-color: grey;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 250px;
+        height: 250px;
+      }
+      #button {
+        background-color: azure;
+        width: 40px;
+        height: 30;
+      }
+      #button:hover {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <!--
+    /\______/\
+  -->
+  <body>
+    <header class="header">
+      <div class="main-nav" role="navigation"></div>
+    </header>
+    <script>
+      window.onscroll = function () {
+        resizeHeader();
+      };
+
+      function resizeHeader() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.querySelector(".main-header").classList.add("resized");
+        } else {
+          document.querySelector(".main-header").classList.remove("resized");
+        }
+      }
+    </script>
+    <div class="calc">      
+      <input id="output" draggable="true">
+      <center>
+      <div class="btn-container">
+      <button id="button">C</button>
+     <button id="button">-</button>
+     <button id="button">*</button>
+      <button id="button">♪</button>
+      <br>
+      <button id="button">7</button>
+     <button id="button">8</button>
+     <button id="button">9</button>
+      <button id="button">0</button>
+      <br>
+      <button id="button">6</button>
+     <button id="button">5</button>
+     <button id="button">4</button>
+      <button id="button">.</button>
+      <br>
+      <button id="button">3</button>
+     <button id="button">2</button>
+     <button id="button">1</button>
+      <button id="button" style="height: 50px;">+</button>
+      </center>
+</div>
+    </div>
+  </body>
+</html>
