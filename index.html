@@ -8,23 +8,21 @@
       }
       .calc {
         background-color: lightgrey;
-        width: 3in;
-        height: 4in;
+        width: 300px; 
         border: solid 3px darkslategrey;
         border-radius: 10px;
         margin-top: 20px;
         /*Align to middle*/
         margin-left: auto;
         margin-right: auto;
+        padding: 5px
       }
       #output {
         border-radius: 10px;
         background-color: white;
         color: saddlebrown;
-        width: 280px;
-        height: 90px;
-        margin-top: 5px;
-        margin-left: 3px;
+        width: 100%; 
+        padding: 20px 10px; 
       }
       .header {
         background-color: lightslategray;
@@ -33,15 +31,15 @@
         background-color: grey;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 30px;
-        border-radius: 5px;
-        width: 250px;
-        height: 250px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px; 
       }
       #button {
         background-color: azure;
-        width: 40px;
-        height: 30;
+        border-radius: 5px;
+        width: 23%;
+        padding: 10px 0;
       }
       #button:hover {
         background-color: burlywood;
@@ -50,6 +48,10 @@
   </head>
   <!--
     /\______/\
+   /          \
+   \ /_\  /_\ /
+    \   --   / 
+     \\----// 
   -->
   <body>
     <header class="header">
@@ -71,10 +73,11 @@
         }
       }
     </script>
-    <div class="calc">      
+    <div class="calc" title="calculate something">      
       <input id="output" draggable="true">
       <center>
       <div class="btn-container">
+        <br>
         <br>
       <button id="button">C</button>
      <button id="button">-</button>
@@ -95,8 +98,17 @@
      <button id="button">2</button>
      <button id="button">1</button>
       <button id="button" style="height: 50px;">+</button>
+      <br>
+      <button id="button" style="width: 100px;">=</button>
       </center>
 </div>
     </div>
+    <!--
+    /\______/\
+   /          \
+   \ /_\  /_\ /
+    \   --   / 
+     \\----// 
+  -->
   </body>
 </html>
