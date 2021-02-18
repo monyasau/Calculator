@@ -1,0 +1,42 @@
+body {
+        background-color: rgb(243, 243, 243);
+      }
+      .calc {
+        background-color: lightgrey;
+        width: 300px; 
+        border: solid 3px darkslategrey;
+        border-radius: 10px;
+        margin-top: 20px;
+        /*Align to middle*/
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px
+      }
+      #output {
+        text-align: right;
+        border-radius: 10px;
+        background-color: white;
+        color: saddlebrown;
+        width: 100%; 
+        padding: 20px 10px; 
+      }
+      .header {
+        background-color: lightslategray;
+      }
+      .btn-container {
+        background-color: grey;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px; 
+      }
+      #button {
+        background-color: azure;
+        border-radius: 5px;
+        width: 23%;
+        padding: 10px 0;
+      }
+      #button:hover {
+        background-color: burlywood;
+      }
