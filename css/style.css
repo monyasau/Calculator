@@ -13,7 +13,7 @@ body {
         padding: 5px
       }
       #output {
-        text-align: right;
+        text-align: right;  
         border-radius: 10px;
         background-color: white;
         color: saddlebrown;
@@ -21,7 +21,7 @@ body {
         padding: 20px 10px; 
       }
       .header {
-        background-color: lightslategray;
+         background-color: lightslategray;
       }
       .btn-container {
         background-color: grey;
