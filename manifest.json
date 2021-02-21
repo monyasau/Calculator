@@ -1,0 +1,16 @@
+{
+  "background_color": "Grey",
+  "description": "Great and simplified calculator",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "./assets/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/ico"
+    }
+
+  ],
+  "name": "Calulator",
+  "short_name": "calc",
+  "start_url": "index.html"
+}
