@@ -1,65 +1,60 @@
-<html>
-  <head>
+<html><head>
     <link rel="icon " href="./assets/icon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="manifest.json">
     <title>Calculator</title>
-    <style>
-      body {
-        background-color: rgb(243, 243, 243);
+    <meta name="keywords" content="Lanre, calc, Calculator, Nigeria, olajide, jidex,">
+  <style>
+    @keyframes roll {
+      0% {
+        transform: rotate(35deg);
       }
-      .calc {
-        background-color: lightgrey;
-        width: 3in;
-        height: 4in;
-        border: solid 3px darkslategrey;
-        border-radius: 10px;
-        margin-top: 20px;
-        /*Align to middle*/
-        margin-left: auto;
-        margin-right: auto;
+      10%{
+        transform: rotate(70deg);
       }
-      #output {
-        border-radius: 10px;
-        background-color: white;
-        color: saddlebrown;
-        width: 280px;
-        height: 90px;
-        margin-top: 5px;
-        margin-left: 3px;
+      30% {
+        transform: rotate(80deg);
       }
-      .header {
-        background-color: lightslategray;
+      60% {
+        transform: rotate(100px);
       }
-      .btn-container {
-        background-color: grey;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 30px;
-        border-radius: 5px;
-        width: 250px;
-        height: 250px;
-      }
-      #button {
-        background-color: azure;
-        width: 40px;
-        height: 30;
-      }
-      #button:hover {
-        background-color: burlywood;
-      }
-    </style>
+    }
+    #logo {
+      animation-name: roll;
+      animation-duration: 3s;
+      height: 200px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      /* transform: rotate(45deg); */
+    }
+  </style>
+  <script>
+    window.onscroll = function scroll() {
+      change();
+    };
+
+     function change() {
+
+    }
+  </script>
   </head>
   <!--
     /\______/\
+   /          \
+   \ /_\  /_\ /
+    \   --   /  
+     \\----// 
   -->
-  <body>
+  <body onscroll="scroll()">
+    <img src="./assets/calc-logo.jpg" alt="image" id="logo" >
     <header class="header">
       <div class="main-nav" role="navigation"></div>
     </header>
-    <script>
+    <!-- <script>
       window.onscroll = function () {
         resizeHeader();
       };
-
       function resizeHeader() {
         if (
           document.body.scrollTop > 80 ||
@@ -70,11 +65,15 @@
           document.querySelector(".main-header").classList.remove("resized");
         }
       }
-    </script>
-    <div class="calc">      
+    </script> -->
+    <div class="container">
+    <!-- <iframe src="C:\Users\Lanre\Documents\Lanre the coder\Microsoft Small Basic Program Listing my own.html"></iframe>
+</iframe> -->
+    <div class="calc" title="calculate something">      
       <input id="output" draggable="true">
       <center>
       <div class="btn-container">
+        <br>
         <br>
       <button id="button">C</button>
      <button id="button">-</button>
@@ -95,8 +94,18 @@
      <button id="button">2</button>
      <button id="button">1</button>
       <button id="button" style="height: 50px;">+</button>
-      </center>
+      <br>
+      <button id="button" style="width: 100px;">=</button>
+      </div></center>
 </div>
     </div>
-  </body>
-</html>
+    <!--
+    /\______/\
+   /          \
+   \ /_\  /_\ /
+    \   --   / 
+     \\----//
+  -->
+  
+
+</body></html>
