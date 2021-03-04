@@ -1,42 +1,60 @@
-<html><head>
-    <link rel="icon " href="./assets/icon.ico">
+<html>
+  <head>
+    <link rel="icon " href="/assets/icon.ico">
+    <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/icon.ico">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Calculator</title>
-    <meta name="keywords" content="Lanre, calc, Calculator, Nigeria, olajide, jidex,">
-  <style>
-    #loading {
+    <meta name="description" content="A very simple calculator developed by Olajide olanrewaju">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="author" content="OLAJIDE OLANREWAJU">
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-title" content="Calculator">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+   >
+    <meta
+      name="keywords"
+      content="Lanre, calc, Calculator, Nigeria, olajide, jidex, Lanre-calc"
+   >
+    <style>
+      #loading {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #fff url("./assets/ping pong loader.gif") no-repeat center center;
+        background: #fff url("./assets/ping pong loader.gif") no-repeat center
+          center;
         z-index: 99999;
-    }
-    @keyframes roll {
-      0% {
-        transform: rotate(35deg);
       }
-      10%{
-        transform: rotate(70deg);
+      @keyframes roll {
+        0% {
+          transform: rotate(35deg);
+        }
+        10% {
+          transform: rotate(70deg);
+        }
+        30% {
+          transform: rotate(80deg);
+        }
+        60% {
+          transform: rotate(100px);
+        }
       }
-      30% {
-        transform: rotate(80deg);
+      #logo {
+        animation-name: roll;
+        animation-duration: 3s;
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        /* transform: rotate(45deg); */
       }
-      60% {
-        transform: rotate(100px);
-      }
-    }
-    #logo {
-      animation-name: roll;
-      animation-duration: 3s;
-      height: 200px;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      /* transform: rotate(45deg); */
-    }
-  </style>
- <script src="./js/js.js"></script>
+    </style>
+    <script src="/js/index.js"></script>
+    <script src="./js/js.js"></script>
   </head>
   <!--
     /\______/\
@@ -45,58 +63,48 @@
     \   --   /  
      \\----// 
   -->
-  <body onscroll="scroll()">
-    <img src="./assets/calc-logo.jpg" alt="image" id="logo" >
-    <header class="header">
-      <div class="main-nav" role="navigation"></div>
-    </header>
-    <!-- <script>
-      window.onscroll = function () {
-        resizeHeader();
-      };
-      function resizeHeader() {
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          document.querySelector(".main-header").classList.add("resized");
-        } else {
-          document.querySelector(".main-header").classList.remove("resized");
-        }
-      }
-    </script> -->
+  <body onscroll="scroll()" onload="loaded()">
+    <div id="loading" data-app="true"></div>
+   
     <div class="container">
-    <!-- <iframe src="C:\Users\Lanre\Documents\Lanre the coder\Microsoft Small Basic Program Listing my own.html"></iframe>
-</iframe> -->
-    <div class="calc" title="calculate something">      
-      <input id="output" draggable="true">
-      <center>
-      <div class="btn-container">
-        <br>
-        <br>
-      <button id="button">C</button>
-     <button id="button">-</button>
-     <button id="button">*</button>
-      <button id="button">♪</button>
-      <br>
-      <button id="button">7</button>
-     <button id="button">8</button>
-     <button id="button">9</button>
-      <button id="button">0</button>
-      <br>
-      <button id="button">6</button>
-     <button id="button">5</button>
-     <button id="button">4</button>
-      <button id="button">.</button>
-      <br>
-      <button id="button">3</button>
-     <button id="button">2</button>
-     <button id="button">1</button>
-      <button id="button" style="height: 50px;">+</button>
-      <br>
-      <button id="button" style="width: 100px;">=</button>
-      </div></center>
-</div>
+      <div class="calc" title="calculate something">
+        <input id="output" draggable="true">
+        <center>
+          <div class="btn-container">
+            <br>
+            <br>
+            <div class="btn-group">
+              <button id="button">C</button>
+              <button id="button">-</button>
+              <button id="button">*</button>
+              <button id="button">♪</button>
+            </div>
+            <br>
+            <div class="btn-group">
+              <button id="button">7</button>
+              <button id="button">8</button>
+              <button id="button">9</button>
+              <button id="button">0</button>
+            </div>
+            <br>
+            <div class="btn-group">
+              <button id="button">6</button>
+              <button id="button">5</button>
+              <button id="button">4</button>
+              <button id="button">.</button>
+            </div>
+            <br>
+            <div class="btn-group">
+              <button id="button">3</button>
+              <button id="button">2</button>
+              <button id="button">1</button>
+              <button id="button" style="height: 50px">+</button>
+            </div>
+            <br>
+            <button id="button" style="width: 100px">=</button>
+          </div>
+        </center>
+      </div>
     </div>
     <!--
     /\______/\
@@ -104,7 +112,5 @@
    \ /_\  /_\ /
     \   --   / 
      \\----//
-  -->
-  
-
-</body></html>
+  --></body>
+</html>
