@@ -20,6 +20,15 @@
       name="keywords"
       content="Lanre, calc, Calculator, Nigeria, olajide, jidex, Lanre-calc"
    >
+   <script>
+   //preloader
+       var preloader = document.getElementById("loading");
+      function loaded() {
+        var preloader = document.getElementById("loading");
+        //this one would go and tell the browser not to show the preloader
+        preloader.style.display = "none";
+      }
+      </script>
     <style>
       #loading {
         position: fixed;
@@ -29,7 +38,7 @@
           center;
         z-index: 99999;
       }
-      @keyframes roll {
+      /* @keyframes roll {
         0% {
           transform: rotate(35deg);
         }
@@ -50,8 +59,8 @@
         width: 200px;
         margin-left: auto;
         margin-right: auto;
-        /* transform: rotate(45deg); */
-      }
+        /* transform: rotate(45deg);
+      } */
     </style>
     <script src="/js/index.js"></script>
     <script src="./js/js.js"></script>
@@ -63,7 +72,7 @@
     \   --   /  
      \\----// 
   -->
-  <body onscroll="scroll()" onload="loaded()">
+  <body onload="loaded()">
     <div id="loading" data-app="true"></div>
    
     <div class="container">
