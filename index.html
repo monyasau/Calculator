@@ -73,20 +73,20 @@
      \\----// 
   -->
   <body onload="loaded()">
-    <div id="loading" data-app="true"></div>
-   
+    <div id="loading"></div>
+   <form name="Calc">
     <div class="container">
       <div class="calc" title="calculate something">
-        <input id="output" draggable="true">
+        <input id="output" draggable="true" name="input">
         <center>
           <div class="btn-container">
             <br>
             <br>
             <div class="btn-group">
-              <button id="button">C</button>
+              <button id="button" name="clear" value="  C  " onclick="Calc.input.value = '';cleared();">C</button>
               <button id="button">-</button>
               <button id="button">*</button>
-              <button id="button">♪</button>
+              <button id="button">/</button>
             </div>
             <br>
             <div class="btn-group">
@@ -97,10 +97,10 @@
             </div>
             <br>
             <div class="btn-group">
-              <button id="button">6</button>
-              <button id="button">5</button>
-              <button id="button">4</button>
-              <button id="button">.</button>
+              <button id="button" name="six" value="6" onclick="Calc.input.value += '6'">6</button>
+              <button id="button" name="five" value="5" onclick="Calc.input.value += '5'">5</button>
+              <button id="button" name="four" value="4" onclick="Calc.input.value += '4'">4</button>
+              <button id="button" name="dot" value="." onclick="Calc.input.value += '.'">.</button>
             </div>
             <br>
             <div class="btn-group">
@@ -115,6 +115,7 @@
         </center>
       </div>
     </div>
+    </form>
     <!--
     /\______/\
    /          \
