@@ -72,45 +72,45 @@
     \   --   /  
      \\----// 
   -->
-  <body onload="loaded()">
+  <body>
     <div id="loading"></div>
-   <form name="Calc">
-    <div class="container">
+   <form name="Calc" method="dialog">
+    <div class="container" role="application">
       <div class="calc" title="calculate something">
-        <input id="output" draggable="true" name="input">
+        <input id="output" draggable="true" name="input" placeholder="1+1 = 2">
         <center>
           <div class="btn-container">
             <br>
             <br>
             <div class="btn-group">
               <button id="button" name="clear" value="  C  " onclick="Calc.input.value = '';cleared();">C</button>
-              <button id="button">-</button>
-              <button id="button">*</button>
-              <button id="button">/</button>
+              <button id="button" name="minus" value="  -  " onclick="Calc.input.value += ' - '">-</button>
+              <button id="button" name="times" value="  x  " onclick="Calc.input.value += ' * '">*</button>
+              <button id="button" name="divide" value="  /  " onclick="Calc.input.value += '/ '">/</button>
             </div>
             <br>
             <div class="btn-group">
-              <button id="button">7</button>
-              <button id="button">8</button>
-              <button id="button">9</button>
-              <button id="button">0</button>
+              <button id="button7" name="seven" value="7" onclick="Calc.input.value += '7'">7</button>
+              <button id="button8" name="eight" value="8" onclick="Calc.input.value += '8'">8</button>
+              <button id="button9" name="nine" value="9" onclick="Calc.input.value += '9'">9</button>
+              <button id="button0" name="zero" value="0" onclick="Calc.input.value += '0'">0</button>
             </div>
             <br>
             <div class="btn-group">
-              <button id="button" name="six" value="6" onclick="Calc.input.value += '6'">6</button>
-              <button id="button" name="five" value="5" onclick="Calc.input.value += '5'">5</button>
-              <button id="button" name="four" value="4" onclick="Calc.input.value += '4'">4</button>
-              <button id="button" name="dot" value="." onclick="Calc.input.value += '.'">.</button>
+              <button id="button6" name="six" value="6" onclick="Calc.input.value += '6'">6</button>
+              <button id="button5" name="five" value="5" onclick="Calc.input.value += '5'">5</button>
+              <button id="button4" name="four" value="4" onclick="Calc.input.value += '4'">4</button>
+              <button id="buttondot" name="dot" value="." onclick="Calc.input.value += '.'">.</button>
             </div>
             <br>
             <div class="btn-group">
-              <button id="button">3</button>
-              <button id="button">2</button>
-              <button id="button">1</button>
-              <button id="button" style="height: 50px">+</button>
+              <button id="button3" name="three" value="3" onclick="Calc.input.value += '3'">3</button>
+              <button id="button2" name="two" value="2" onclick="Calc.input.value += '2'">2</button>
+              <button id="button1" name="one" value="1" onclick="Calc.input.value += '1'">1</button>
+              <button id="button" style="height: 50px" name="plus" value="  +  " onclick="Calc.input.value += ' + '">+</button>
             </div>
             <br>
-            <button id="button" style="width: 100px">=</button>
+            <button id="button" style="width: 100px"  name="equal" value="  =  " onclick="Calc.input.value = eval(Calc.input.value);solved();">=</button>
           </div>
         </center>
       </div>

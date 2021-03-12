@@ -23,12 +23,17 @@ body {
   padding: 5px;
 }
 #output {
+  font-size: large;
   text-align: right;
   border-radius: 10px;
   background-color: white;
   color: saddlebrown;
   width: 100%;
   padding: 20px 10px;
+}
+#output::placeholder {
+  color: #999;
+  font-size: large;
 }
 .header {
   background-color: lightslategray;
@@ -48,6 +53,105 @@ body {
   padding: 10px 0;
 }
 #button:hover {
+  background-color: thistle;
+}
+#button1 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button1:hover {
+  background-color: thistle;
+}
+#button2 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button2:hover {
+  background-color: thistle;
+}
+#button3 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button3:hover {
+  background-color: thistle;
+}
+#button4 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button4:hover {
+  background-color: thistle;
+}
+#button5 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button5:hover {
+  background-color: thistle;
+}
+#button6 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button6:hover {
+  background-color: thistle;
+}
+#button7 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button7:hover {
+  background-color: thistle;
+}
+#button8 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button8:hover {
+  background-color: thistle;
+}
+#button9 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button9:hover {
+  background-color: thistle;
+}
+#button0 {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#button0:hover {
+  background-color: thistle;
+}
+#buttondot {
+  background-color: azure;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px 0;
+}
+#buttondot:hover {
   background-color: thistle;
 }
 /* header.topnav {
