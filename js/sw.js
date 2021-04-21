@@ -10,6 +10,7 @@ self.addEventListener("install", (e) => {
           "./css/style.css",
           "./assets/icon.ico",
           "./assets/ping pong loader.gif",
+          "manifest.json",
         ])
       )
   );

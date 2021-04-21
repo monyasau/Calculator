@@ -1,69 +1,25 @@
 <html>
   <head>
-    <link rel="icon " href="/assets/icon.ico">
     <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/icon.ico">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="manifest" href="manifest.webmanifest">
-    <title>Calculator</title>
+    <link rel="manifest" href="manifest.json">
+    <title>calculator</title>
     <meta name="description" content="A very simple calculator developed by Olajide olanrewaju">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
         <meta name="author" content="OLAJIDE OLANREWAJU">
     <meta name="theme-color" content="#000">
-    <meta name="apple-mobile-web-app-title" content="Calculator">
+    <meta name="apple-mobile-web-app-title" content="calculator">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0 user-scalable=no"
    >
     <meta
       name="keywords"
-      content="Lanre, calc, Calculator, Nigeria, olajide, jidex, Lanre-calc"
+      content="Lanre, calc, calculator, Nigeria, olajide, jidex, Lanre-calc"
    >
-   <script>
-   // preloader
-       var preloader = document.getElementById("loading");
-      function loaded() {
-        var preloader = document.getElementById("loading");
-        // this one would go and tell the browser not to show the preloader
-        preloader.style.display = "none";
-      }
-      </script>
-    <style>
-      #loading {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #fff url("./assets/ping pong loader.gif") no-repeat center
-          center;
-        z-index: 99999;
-      }
-      /* @keyframes roll {
-        0% {
-          transform: rotate(35deg);
-        }
-        10% {
-          transform: rotate(70deg);
-        }
-        30% {
-          transform: rotate(80deg);
-        }
-        60% {
-          transform: rotate(100px);
-        }
-      }
-      #logo {
-        animation-name: roll;
-        animation-duration: 3s;
-        height: 200px;
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        /* transform: rotate(45deg);
-      } */
-    </style>
     <script src="/js/index.js"></script>
-    <script src="./js/js.js"></script>
   </head>
   <!--
     /\______/\
@@ -73,44 +29,43 @@
      \\----// 
   -->
   <body>
-    <!-- <div id="loading"></div> -->
-   <form name="Calc" method="dialog">
+   <form name="calc" method="dialog">
     <div class="container" role="application">
       <div class="calc" title="calculate something">
-        <input id="output" draggable="true" name="input" placeholder="1+1 = 2">
+        <input id="output" name="input" placeholder="0" readonly>
         <center>
           <div class="btn-container">
             <br>
             <br>
             <div class="btn-group">
-              <button id="button" name="clear" value="  C  " onclick="Calc.input.value = '';cleared();">C</button>
-              <button id="button" name="minus" value="  -  " onclick="Calc.input.value += ' - '">-</button>
-              <button id="button" name="times" value="  x  " onclick="Calc.input.value += ' * '">x</button>
-              <button id="button" name="divide" value="  /  " onclick="Calc.input.value += '/ '">/</button>
+              <button id="buttonc" name="clear" value="  C  " onclick="calc.input.value = '';cleared();" title="clear">C</button>
+              <button id="button-" name="minus" value="  -  " onclick="calc.input.value += ' - '">-</button>
+              <button id="buttonx" name="times" value="  x  " onclick="calc.input.value += ' * '">x</button>
+              <button id="buttondiv" name="divide" value="  /  " onclick="calc.input.value += '/ '">/</button>
             </div>
             <br>
             <div class="btn-group">
-              <button id="button7" name="seven" value="7" onclick="Calc.input.value += '7'">7</button>
-              <button id="button8" name="eight" value="8" onclick="Calc.input.value += '8'">8</button>
-              <button id="button9" name="nine" value="9" onclick="Calc.input.value += '9'">9</button>
-              <button id="button0" name="zero" value="0" onclick="Calc.input.value += '0'">0</button>
+              <button id="button7" name="seven" value="7" onclick="calc.input.value += '7'">7</button>
+              <button id="button8" name="eight" value="8" onclick="calc.input.value += '8'">8</button>
+              <button id="button9" name="nine" value="9" onclick="calc.input.value += '9'">9</button>
+              <button id="button0" name="zero" value="0" onclick="calc.input.value += '0'">0</button>
             </div>
             <br>
             <div class="btn-group">
-              <button id="button6" name="six" value="6" onclick="Calc.input.value += '6'">6</button>
-              <button id="button5" name="five" value="5" onclick="Calc.input.value += '5'">5</button>
-              <button id="button4" name="four" value="4" onclick="Calc.input.value += '4'">4</button>
-              <button id="buttondot" name="dot" value="." onclick="Calc.input.value += '.'">.</button>
+              <button id="button6" name="six" value="6" onclick="calc.input.value += '6'">6</button>
+              <button id="button5" name="five" value="5" onclick="calc.input.value += '5'">5</button>
+              <button id="button4" name="four" value="4" onclick="calc.input.value += '4'">4</button>
+              <button id="buttondot" name="dot" value="." onclick="calc.input.value += '.'">.</button>
             </div>
             <br>
             <div class="btn-group">
-              <button id="button3" name="three" value="3" onclick="Calc.input.value += '3'">3</button>
-              <button id="button2" name="two" value="2" onclick="Calc.input.value += '2'">2</button>
-              <button id="button1" name="one" value="1" onclick="Calc.input.value += '1'">1</button>
-              <button id="button" style="height: 50px" name="plus" value="  +  " onclick="Calc.input.value += ' + '">+</button>
+              <button id="button3" name="three" value="3" onclick="calc.input.value += '3'">3</button>
+              <button id="button2" name="two" value="2" onclick="calc.input.value += '2'">2</button>
+              <button id="button1" name="one" value="1" onclick="calc.input.value += '1'">1</button>
+              <button id="button" style="height: 50px" name="plus" value="  +  " onclick="calc.input.value += ' + '">+</button>
             </div>
             <br>
-            <button id="button" style="width: 100px"  name="equal" value="  =  " onclick="Calc.input.value = eval(Calc.input.value);solved();">=</button>
+            <button id="button" style="width: 100px"  name="equal" value="  =  " onclick="calc.input.value = eval(calc.input.value);solved();">=</button>
           </div>
         </center>
       </div>

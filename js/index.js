@@ -1,6 +1,3 @@
-window.onload = function () {
-  loaded();
-}
 btn1 = document.getElementById(button1);
 btn2 = document.getElementById(button2);
 btn3 = document.getElementById(button3);
@@ -9,7 +6,11 @@ btn5 = document.getElementById(button5);
 btn6 = document.getElementById(button6);
 btn7 = document.getElementById(button7);
 btn8 = document.getElementById(button8);
-// btn9 = document.getElementById(button9);
+btn9 = document.getElementById(button9);
+btnc = document.getElementById(buttonc);
+btnx = document.getElementById(buttonx);
+btndiv = document.getElementById(buttondiv);
+btnc.onclick = cleared();
 // btn1 = document.getElementById(button1);
 // btn1 = document.getElementById(button1);
 // btn1 = document.getElementById(button1);
@@ -17,16 +18,6 @@ btn8 = document.getElementById(button8);
 // btn1 = document.getElementById(button1);
 // btn1 = document.getElementById(button1);
 // btn1 = document.getElementById(button1);
-
- //preloader
-       var preloader = document.getElementById("loading");
-      function loaded() {
-        var preloader = document.getElementById("loading");
-        //this one would go and tell the browser not to show the preloader
-        preloader.style.display = "none";
-      }
-      //preloader ends
-      
       // window.onscroll = function () {
       //   resizeHeader();
       // };
