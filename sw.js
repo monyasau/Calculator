@@ -5,12 +5,12 @@ self.addEventListener("install", (e) => {
       .then((cache) =>
         cache.addAll([
           "/",
-          "index.html",
           "./js/index.js",
+          "index.html",
           "./css/style.css",
-          "./assets/icon.ico",
-          "./assets/ping pong loader.gif",
+          "./assets/favicon.png",
           "manifest.json",
+          "sw.js",
         ])
       )
   );
