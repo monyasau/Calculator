@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(to left, rgb(168, 170, 170), white);
+  background: linear-gradient(to left, rgb(168, 170, 170), #f2f2f2);
+  font-family: arial , 'consolas', 'cobel','Times New Roman', serif;
 }
 .btn-group {
   display: flex;
@@ -234,4 +235,8 @@ button {
 #buttondot:hover {
   background-color: darkgrey;
   color: white;
+}
+#footer{
+  margin-top: 90px;
+  text-align: center;
 }

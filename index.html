@@ -3,35 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <title>calculator</title>
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="/assets/icon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/icon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/assets/favicon.png" />
     <link rel="canonicial " href="https://Olanre.netlify.com" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0 user-scalable=no"
     />
     <meta name="application-name" content="calculator" />
-    <meta name="description" content="A very simple calculator developed by Olajide olanrewaju">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+      name="description"
+      content="A very simple calculator developed by Olajide olanrewaju"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="robots" content="all" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-        <meta name="author" content="OLAJIDE OLANREWAJU">
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-title" content="calculator">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="author" content="OLAJIDE OLANREWAJU" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="apple-mobile-web-app-title" content="calculator" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0 user-scalable=no"
-   >
+    />
     <meta
       name="keywords"
       content="Lanre, calc, calculator, Nigeria, olajide, jidex, Lanre-calc"
-   >
-   
+    />
+
     <script src="/js/index.js"></script>
   </head>
   <!--
@@ -42,55 +45,201 @@
      \\----//
   -->
   <body>
-   <form name="calc" method="dialog">
-    <div class="container" role="application">
-      <div class="calc" title="calculate something">
-        <input id="output" name="input" placeholder="0" readonly>
+    
+    <form name="calc" method="dialog">
+      <div class="container" role="application">
+        <div class="calc" title="calculate something">
+          <input id="output" name="input" placeholder="0" readonly />
           <div class="btn-container">
-            <br>
-            <br>
+            <br />
             <div class="btn-group">
-              <button id="buttonc" title="clear" name="clear" value="  C  " onclick="calc.input.value = '';cleared();" title="clear">C</button>
-              <button id="buttondel" onclick="calc.input.value -= '1'" title="Delete the previous number">DEL</button>
-              <button id="buttondiv" name="divide" value="  /  " onclick="calc.input.value += '/ '">/</button>
+              <button
+                id="buttonc"
+                title="clear"
+                type="reset"
+              >
+                C
+              </button>
+              <button
+                id="buttondel"
+                onclick="calc.input.value -= '1'"
+                title="Delete the previous number"
+              >
+                DEL
+              </button>
+              <button
+                id="buttondiv"
+                name="divide"
+                value="  /  "
+                onclick="calc.input.value += '/ '"
+              >
+                /
+              </button>
             </div>
-            <br>
+            <br />
             <div class="btn-group">
-              <button id="button7" name="seven" value="7" onclick="calc.input.value += '7'">7</button>
-              <button id="button8" name="eight" value="8" onclick="calc.input.value += '8'">8</button>
-              <button id="button9" name="nine" value="9" onclick="calc.input.value += '9'">9</button>
-              <button id="buttonx" name="times" value="  x  " onclick="calc.input.value += ' * '">x</button>
+              <button
+                id="button7"
+                name="seven"
+                value="7"
+                onclick="calc.input.value += '7'"
+              >
+                7
+              </button>
+              <button
+                id="button8"
+                name="eight"
+                value="8"
+                onclick="calc.input.value += '8'"
+              >
+                8
+              </button>
+              <button
+                id="button9"
+                name="nine"
+                value="9"
+                onclick="calc.input.value += '9'"
+              >
+                9
+              </button>
+              <button
+                id="buttonx"
+                name="times"
+                value="  x  "
+                onclick="calc.input.value += ' * '"
+              >
+                x
+              </button>
             </div>
-            <br>
+            <br />
             <div class="btn-group">
-              <button id="button6" name="six" value="6" onclick="calc.input.value += '6'">6</button>
-              <button id="button5" name="five" value="5" onclick="calc.input.value += '5'">5</button>
-              <button id="button4" name="four" value="4" onclick="calc.input.value += '4'">4</button>
-           <button id="button-" name="minus" value="  -  " onclick="calc.input.value += ' - '">-</button>
+              <button
+                id="button6"
+                name="six"
+                value="6"
+                onclick="calc.input.value += '6'"
+              >
+                6
+              </button>
+              <button
+                id="button5"
+                name="five"
+                value="5"
+                onclick="calc.input.value += '5'"
+              >
+                5
+              </button>
+              <button
+                id="button4"
+                name="four"
+                value="4"
+                onclick="calc.input.value += '4'"
+              >
+                4
+              </button>
+              <button
+                id="button-"
+                name="minus"
+                value="  -  "
+                onclick="calc.input.value += ' - '"
+              >
+                -
+              </button>
             </div>
-            <br>
+            <br />
             <div class="btn-group">
-              <button id="button1" name="one" value="1" onclick="calc.input.value += '1'">1</button>
-              <button id="button2" name="two" value="2" onclick="calc.input.value += '2'">2</button>
-              <button id="button3" name="three" value="3" onclick="calc.input.value += '3'">3</button>
-              <button id="buttonplus" name="plus" value="  +  " onclick="calc.input.value += ' + '">+</button>
+              <button
+                id="button1"
+                name="one"
+                value="1"
+                onclick="calc.input.value += '1'"
+              >
+                1
+              </button>
+              <button
+                id="button2"
+                name="two"
+                value="2"
+                onclick="calc.input.value += '2'"
+              >
+                2
+              </button>
+              <button
+                id="button3"
+                name="three"
+                value="3"
+                onclick="calc.input.value += '3'"
+              >
+                3
+              </button>
+              <button
+                id="buttonplus"
+                name="plus"
+                value="  +  "
+                onclick="calc.input.value += ' + '"
+              >
+                +
+              </button>
             </div>
-            <br>
-            <div style="margin-left: auto; margin-right: auto;" class="btn-group">
-           <button id="button0" name="zero" value="0" onclick="calc.input.value += '0'">0</button>
-            <button id="buttondot" name="dot" value="." onclick="calc.input.value += '.'">.</button>
-            <button id="buttonequal"  name="equal" value="  =  " onclick="calc.input.value = eval(calc.input.value);solved();">=</button>
+            <br />
+            <div
+              style="margin-left: auto; margin-right: auto"
+              class="btn-group"
+            >
+              <button
+                id="button0"
+                name="zero"
+                value="0"
+                onclick="calc.input.value += '0'"
+              >
+                0
+              </button>
+              <button
+                id="buttondot"
+                name="dot"
+                value="."
+                onclick="calc.input.value += '.'"
+              >
+                .
+              </button>
+              <button
+                id="buttonequal"
+                name="equal"
+                value="  =  "
+                onclick="calc.input.value = eval(calc.input.value);solved();"
+              >
+                =
+              </button>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </form>
+    <footer id="footer">
+      <h1 style="color: white">Contact Me</h1>
+      <div class="contacts">
+        <h3>
+          &#9742;:
+          <a
+          target="_blank"
+            href="tel:+2349133442800"
+            style="color: #222020; cursor: alias;"
+            title="Call me"
+          >
+           0913 344 2800
+          </a>
+          <br>
+          Email:
+          <a style="color: #222020;" href="mailto:Olajide.m.olanrewaju@gmail.com">Olajide.m.olanrewaju@gmail.com</a>
+        </h3>
+      </div>
+      <h3>Designed by <a href="https://olanre.netlify.com">Olajide Olanrewaju</a></h3>
+    </footer>
     <!--
     /\______/\
    /          \
    \ /_\  /_\ /
     \   --   / 
      \\----//
-  -->
-  </body>
+  --></body>
 </html>
